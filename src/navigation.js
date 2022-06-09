@@ -1,11 +1,15 @@
 searchFormBtn.addEventListener('click', ()=> {
-    location.hash = '#search=';
+    location.hash = '#search=' + searchFormInput.value;
 })
 trendingBtn.addEventListener('click', ()=> {
     location.hash = '#trends';
 })
 arrowBtn.addEventListener('click', ()=> {
-    location.hash = '#home';
+    if(document.domain !== 'localhost'){
+        location.hash = '#home';
+    } else {
+        history.back();
+    }
 })
 
 window.addEventListener('DOMContentLoaded', navigator, false);
@@ -26,7 +30,8 @@ function navigator() {
         homePage();
     }
 
-
+    window.scrollTo(0, 0);
+    
 }
 
 function homePage() {
@@ -65,8 +70,14 @@ function categoriesPage() {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
-
     
+    // ['#category', 'id-name']
+   const [_, categoryData] = location.hash.split('=');
+   const [categoryId, categoryName] = categoryData.split('-');
+
+   headerCategoryTitle.innerHTML = categoryName;
+
+    getMoviesByCategory(categoryId);
 }
 function movieDetailsPage() {
     console.log('Movie!!')
@@ -83,6 +94,10 @@ function movieDetailsPage() {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
+
+     // ['#category', 'id-name']
+   const [_, movieId] = location.hash.split('=');
+   getMovieById(movieId);
 }
 function searchPage() {
     console.log('Search!!')
@@ -92,15 +107,20 @@ function searchPage() {
     arrowBtn.classList.remove('inactive');
     arrowBtn.classList.remove('header-arrow--white');
     headerTitle.classList.add('inactive');
-    headerCategoryTitle.classList.remove('inactive');
+    headerCategoryTitle.classList.add('inactive');
     searchForm.classList.remove('inactive');
 
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
+
+     // ['#category', 'id-name']
+   const [_, query] = location.hash.split('=');
+   getMoviesBySearch(query);
 }
 function trendsPage() {
+    
     console.log('TRENDS!!')
 
     headerSection.classList.remove('header-container--long');
@@ -115,4 +135,8 @@ function trendsPage() {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
+    
+    headerCategoryTitle.innerHTML = 'Trending';
+
+    getTrendingMovies();
 }
