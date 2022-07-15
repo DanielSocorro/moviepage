@@ -10,34 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/app.css" />
 
-  <title>MoviesPage</title>
+  <title>Movies Page</title>
 </head>
 <body>
   <header id="header" class="header-container header-container">
     <span class="header-arrow inactive">&lt;</span>
-    <h1 class="header-title">MoviesPage</h1>
+    <h1 class="header-title">Movies Page</h1>
     <h1 class="header-title header-title--categoryView inactive">Action</h1>
 
     <form id="searchForm" class="header-searchForm">
-      <input type="text" placeholder="Vengadores" />
+      <input type="text" placeholder="" />
       <button id="searchBtn">🔍</button>
     </form>
   </header>
 
   <section id="trendingPreview" class="trendingPreview-container">
     <div class="trendingPreview-header">
-      <h2 class="trendingPreview-title">Trending</h2>
+      <h2 class="trendingPreview-title">Trending Movies</h2>
       <button class="trendingPreview-btn">More</button>
     </div>
 
     <article class="trendingPreview-movieList">
-      <!-- <div class="movie-container">
-        <img
-          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-          class="movie-img"
-          alt="Nombre de la película"
-        />
-      </div> -->
+     
     </article>
   </section>
 
@@ -45,44 +39,18 @@
     <h2 class="categoriesPreview-title">Categories</h2>
 
     <article class="categoriesPreview-list">
-      <!-- <div class="category-container">
-        <h3 id="id28" class="category-title">Romance</h3>
-      </div> -->
-
+   
     </article>
   </section>
 
   <section id="genericList" class="genericList-container inactive">
-    <div class="movie-container">
-      <img
-        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-        class="movie-img"
-        alt="Nombre de la película"
-      />
-    </div>
-
-    <div class="movie-container">
-      <img
-        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-        class="movie-img"
-        alt="Nombre de la película"
-      />
-    </div>
-
-    <div class="movie-container">
-      <img
-        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-        class="movie-img"
-        alt="Nombre de la película"
-      />
-    </div>
+    
   </section>
 
   <section id="movieDetail" class="movieDetail-container inactive">
-    <h1 class="movieDetail-title">Deadpool</h1>
-    <span class="movieDetail-score">7.6</span>
+    <h1 class="movieDetail-title"></h1>
+    <span class="movieDetail-score"></span>
     <p class="movieDetail-description">
-      Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.
     </p>
 
     <article class="categories-list">
@@ -130,7 +98,7 @@
     </article>
   </section>
 
-  <footer>Modificado por @dansc147</footer>
+  <footer>Made By Daniel Socorro</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./src/secretkey.js"></script>

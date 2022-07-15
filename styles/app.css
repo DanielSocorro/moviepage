@@ -9,6 +9,7 @@
   --purple-medium-3: #5C218A;
   --purple-dark-1: #3E0F64;
   --purple-dark-2: #2A0646;
+  --black-dark:rgb(24, 24, 24);
 
   --yellow: #EECC75;
   --green: #CAD297;
@@ -17,7 +18,7 @@
   --darkBlue: #8EA2EA;
   --red: #F09D9D;
 
-  --font-family-titles: 'Dosis', sans-serif;
+  --font-family-titles: 'Raleway', sans-serif;
   --font-family-text: 'Red Hat Display', sans-serif;
   --font-weight-title1: 800;
   --font-weight-title2: 700;
@@ -26,12 +27,12 @@
 }
 
 html {
-  background-color: var(--purple-medium-3);
+  background-color:var(--black-dark);
 }
 
 body {
-  background-color: var(--purple-light-1);
-  color: var(--purple-dark-2);
+  background-color: var(--black-dark);
+  color: var(--purple-light-1);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text1);
   font-size: 16px;
@@ -46,7 +47,7 @@ h1, h2, h3 {
 
 h1, h2 {
   font-size: 24px;
-  color: var(--purple-dark-2);
+  color:var(--purple-light-1);
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-title1);
   margin: 0;
@@ -54,12 +55,12 @@ h1, h2 {
 }
 h2 {
     font-size: 18px;
-    color: var(--purple-dark-1);
+    color: var(--purple-light-1);
     font-weight: var(--font-weight-title2);
   }
   
   h3 {
-    color: var(--purple-dark-2);
+    color: var(--purple-light-1);
     font-weight: var(--font-weight-text2);
     font-size: 16px;
   }
@@ -138,6 +139,7 @@ h2 {
   
   .header-title {
     margin-bottom: 16px;
+    font-size: 37px;
   }
   
   .header-arrow {
@@ -281,7 +283,7 @@ h2 {
     margin-top: 403px;
     z-index: 1;
     position: absolute;
-    background-color: var(--purple-light-1);
+    background-color: var(--black-dark);
   }
   
   .movieDetail-title {
