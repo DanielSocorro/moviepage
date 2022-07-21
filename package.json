@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanielSocorro/API-REST-Project/issues"
   },
-  "homepage": "https://beard-bear-moviepage.netlify.app/"
+  "homepage": "https://beard-bear-moviepage.netlify.app/",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
