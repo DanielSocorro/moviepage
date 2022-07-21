@@ -14,27 +14,29 @@
 </head>
 <body>
   <header id="header" class="header-container header-container">
+    
     <span class="header-arrow inactive">&lt;</span>
     <h1 class="header-title">Movies Page</h1>
     <h1 class="header-title header-title--categoryView inactive">Action</h1>
 
     <form id="searchForm" class="header-searchForm">
-      <input type="text" placeholder="" />
-      <button id="searchBtn">🔍</button>
+      <input type="text" placeholder="Search Movies" />
+      <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></i></button>
     </form>
   </header>
 
   <section id="trendingPreview" class="trendingPreview-container">
     <div class="trendingPreview-header">
       <h2 class="trendingPreview-title">Trending Movies</h2>
-      <button class="trendingPreview-btn">More</button>
+
     </div>
 
     <article class="trendingPreview-movieList">
      
     </article>
+    
   </section>
-
+  <button class="trendingPreview-btn">More</button>
   <section id="categoriesPreview" class="categoriesPreview-container">
     <h2 class="categoriesPreview-title">Categories</h2>
 
@@ -49,31 +51,26 @@
 
   <section id="movieDetail" class="movieDetail-container inactive">
     <h1 class="movieDetail-title"></h1>
-    <span class="movieDetail-score"></span>
+    <span class="movieDetail-score"></span>Release Date:
+    <p class="movieDetail-releasedate"></p>
     <p class="movieDetail-description">
+      
     </p>
 
     <article class="categories-list">
       <div class="category-container">
-        <h3 id="id28" class="category-title">Romance</h3>
+        <h3 id="id28" class="category-title"></h3>
       </div>
 
-      <div class="category-container">
-        <h3 id="id16" class="category-title">Drama</h3>
-      </div>
-
-      <div class="category-container">
-        <h3 id="id14" class="category-title">Acción</h3>
-      </div>
     </article>
 
     <article class="relatedMovies-container">
-      <h2 class="relatedMovies-title">Películas similares</h2>
+      <h2 class="relatedMovies-title">Related Movies</h2>
 
       <div class="relatedMovies-scrollContainer">
         <div class="movie-container">
           <img
-            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            src=""
             class="movie-img"
             alt="Nombre de la película"
           />
@@ -81,7 +78,7 @@
         
         <div class="movie-container">
           <img
-            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            src=""
             class="movie-img"
             alt="Nombre de la película"
           />
@@ -89,8 +86,8 @@
         
         <div class="movie-container">
           <img
-            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-            class="movie-img"
+            src=""
+           class="movie-img"
             alt="Nombre de la película"
           />
         </div>
@@ -100,6 +97,8 @@
 
   <footer>Made By Daniel Socorro</footer>
 
+  
+  <script src="https://kit.fontawesome.com/f48d03caed.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./src/secretkey.js"></script>
   <script src="./src/main.js"></script>

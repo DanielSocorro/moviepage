@@ -9,14 +9,16 @@
   --purple-medium-3: #5C218A;
   --purple-dark-1: #3E0F64;
   --purple-dark-2: #2A0646;
-  --black-dark:rgb(24, 24, 24);
+
 
   --yellow: #EECC75;
   --green: #CAD297;
+  --green-dark:#6c8a21;
   --aqua: #B7EAC5;
   --lightBlue: #A2EEE5;
   --darkBlue: #8EA2EA;
   --red: #F09D9D;
+  --grey-blue: #618cbe;
 
   --font-family-titles: 'Raleway', sans-serif;
   --font-family-text: 'Red Hat Display', sans-serif;
@@ -31,7 +33,7 @@ html {
 }
 
 body {
-  background-color: var(--black-dark);
+  background-image: url(/img/movies-background.jpg);
   color: var(--purple-light-1);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text1);
@@ -79,7 +81,7 @@ h2 {
   }
   
   button {
-    background-color: var(--purple-dark-1);
+    background-color: var(--grey-blue);
     border: none;
     color: var(--purple-light-2);
     font-weight: var(--font-weight-text2);
@@ -119,15 +121,33 @@ h2 {
   
   
   /* Header */
+
+   
   .header-container {
-    padding-top: 40px;
-  }
   
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin-left: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+   
+  }
+
+  .nav-menu ul li a {
+    color: var(--purple-light-1);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
   .header-container--long {
-    background-image: url('https://pics.filmaffinity.com/Deadpool-777527803-large.jpg');
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(https://pics.filmaffinity.com/Deadpool-777527803-large.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 100%, rgba(0, 0, 0, 0) 29.17%);
     background-size: cover !important;
-    height: 480px;
+    height: 605px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -157,8 +177,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 42%;
     flex-wrap: nowrap;
+    margin-left: 432px;
+    margin-top: -60px;
   }
   
   .header-searchForm input {
@@ -186,6 +208,7 @@ h2 {
     border-radius: 8px;
     height: 32px;
     width: 72px;
+    margin-left: 84vw;
   }
   
   .trendingPreview-movieList {
@@ -218,24 +241,34 @@ h2 {
   }
   
   .category-title {
+    display: flex;
     margin-bottom: 8px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    background-color: var(--grey-blue);
+    border-radius: 6px;
+    width: 168px;
+    height: 39px;
+    align-items: center;
   }
-  
+  @media only screen and (min-width: 820px ) {
+    .category-container {
+      width: 26%;
+    }
+    
+  }
   .category-title::before {
     content: '••••';
     color: transparent;
-    /* TODO: cambiar color por ID de la categoría */
     background-color: var(--idColor);
     border-radius: 8px;
     margin-right: 8px;
     width: 8px;
     height: 8px;
   }
-  #id28 { --idColor: var(--yellow); }
+/*   #id28 { --idColor: var(--yellow); }
   #id12 { --idColor: var(--red); }
   #id16 { --idColor: var(--green); }
   #id35 { --idColor: var(--lightBlue); }
@@ -254,7 +287,7 @@ h2 {
   #id53 { --idColor: var(--green); }
   #id10752 { --idColor: var(--lightBlue); }
   #id37 { --idColor: var(--darkBlue); }
-  
+   */
   
   /* Generic List (search, trending & category) */
   .genericList-container {
@@ -292,12 +325,19 @@ h2 {
     margin: 0 0 16px 0;
     padding: 0;
   }
-  
+  .movieDetail-releasedate {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -21px;
+    font-size: 19px;
+  }
   .movieDetail-score {
-    display: inline-block;
-    text-align: right;
+    display: flex;
     width: 18%;
     font-weight: var(--font-weight-title2);
+    margin-top: 26px;
+    margin-bottom: 16px;
+    font-size: 42px;
   }
   .movieDetail-score::before {
     content: '★';
@@ -344,7 +384,7 @@ h2 {
   
   /* Footer */
   footer {
-    background-color: var(--purple-medium-3);
+    background-color: var(--grey-blue);
     color: var(--purple-light-2);
     text-align: center;
     height: 48px;

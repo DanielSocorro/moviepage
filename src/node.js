@@ -23,5 +23,6 @@ const searchFormBtn = document.querySelector('#searchBtn');
 const trendingBtn = document.querySelector('.trendingPreview-btn');
 
 const movieDetailTitle = document.querySelector('.movieDetail-title');
+const movieDetailReleaseDate = document.querySelector('.movieDetail-releasedate');
 const movieDetailDescription = document.querySelector('.movieDetail-description');
 const movieDetailScore = document.querySelector('.movieDetail-score');
