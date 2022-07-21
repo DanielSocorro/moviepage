@@ -17,6 +17,7 @@
   },
   "homepage": "https://beard-bear-moviepage.netlify.app/",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "eslint": "^8.20.0"
   }
 }
