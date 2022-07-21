@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielSocorro/API-REST-Project.git"
+    "url": "git+https://github.com/DanielSocorro/moviepage.git"
   },
   "author": "@dansc147",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielSocorro/API-REST-Project/issues"
+    "url": "https://github.com/DanielSocorro/moviepage/issues"
   },
   "homepage": "https://beard-bear-moviepage.netlify.app/",
   "dependencies": {
