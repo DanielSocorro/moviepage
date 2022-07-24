@@ -105,3 +105,6 @@ dist
 
 # secretkey.js (API-KEY)
 src/secretkey.js
+
+# All the DS files in your Mac
+.DS_Store

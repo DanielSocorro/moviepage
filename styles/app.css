@@ -206,9 +206,10 @@ h2 {
   
   .trendingPreview-btn {
     border-radius: 8px;
-    height: 32px;
-    width: 72px;
+    height: 1.4rem;
+    width: 3.5rem;
     margin-left: 84vw;
+    margin-top: 8%;
   }
   
   .trendingPreview-movieList {
@@ -300,7 +301,8 @@ h2 {
   
   .genericList-container .movie-container {
     display: inline-block;
-    width: 47.5%;
+    width: 40.5%;
+    margin-top: 4%;
   }
   
   .genericList-container .movie-img {
