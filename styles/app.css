@@ -208,7 +208,6 @@ h2 {
     border-radius: 8px;
     height: 1.4rem;
     margin-left: 80vw;
-    margin-top: 8%;
   }
   
   .trendingPreview-movieList {
@@ -256,13 +255,15 @@ h2 {
   }
   .actionPreview-title {
     font-size: 18px;
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
   
   .actionPreview-btn {
     border-radius: 8px;
     height: 1.4rem;
     margin-left: 80vw;
-    margin-top: 8%;
+ 
   }
   
   .actionPreview-movieList {
