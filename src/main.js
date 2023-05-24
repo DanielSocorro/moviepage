@@ -1,5 +1,3 @@
-import SimpleBar from 'simplebar';
-
 const api = axios.create({
     baseURL: 'https://api.themoviedb.org/3',
     headers: {
@@ -28,10 +26,8 @@ function createMovies(movies, container) {
         movieContainer.appendChild(movieImg);
         container.appendChild(movieContainer);
     });
-        new SimpleBar(container);
+
 }
-
-
 
 function createCategories(categories, container) {
     container.innerHTML = "";
@@ -52,7 +48,6 @@ function createCategories(categories, container) {
         categoryContainer.appendChild(categoryTitle);
         container.appendChild(categoryContainer);
     });
-        new SimpleBar(container);
 }
 
 //calls to API
@@ -71,7 +66,7 @@ async function getCategoriesPreview(){
 
 
     createCategories(categories, categoriesPreviewList);
-    new SimpleBar(genericSection);
+    
 }
 
 async function getMoviesByCategory(id){
@@ -127,5 +122,4 @@ async function getRelatedMoviesId(id) {
     const relatedMovies = data.results;
 
     createMovies(relatedMovies, relatedMoviesContainer);
-    new SimpleBar(relatedMoviesContainer);
 }
