@@ -199,6 +199,10 @@ h2 {
     align-items: center;
     justify-content: space-between;
   }
+  .trendingPreview-title {
+    font-size: 18px;
+  
+  }
   
   .trendingPreview-btn {
     border-radius: 8px;
