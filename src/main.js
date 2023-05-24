@@ -65,7 +65,7 @@ async function getActionMovies() {
         }
     });
     const actionMovies = data.results;
-    createMovies(actionMovies, actionMoviesList);
+    createMovies(actionMovies, actionMoviesPreviewList);
   }
 
 async function getCategoriesPreview(){
