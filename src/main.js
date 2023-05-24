@@ -57,26 +57,12 @@ async function getTrendingMoviesPreview(){
     createMovies(movies, trendingMoviesPreviewList);
 }
 
-async function getActionMoviesPreview(){
-    const { data } = await api('trending/movie/day');
+async function getActionsMoviesPreview(){
+    const { data } = await api('action/movie/day');
     const movies = data.results;
-    const actionGenreId = await getGenreId('id28');
-
-    const actionMovies = movies.filter(movie => {
-        const genreIds = movie.genre_ids;
-        return genreIds.includes(actionGenreId);
-    });
-
-    createMovies(actionMovies, trendingMoviesPreviewList);
+    createMovies(movies, actionMoviesPreviewList);
+    
 }
-
-async function getGenreId(genreName) {
-    const { data } = await api('genre/movie/list');
-    const genres = data.genres;
-    const genre = genres.find(genre => genre.name === genreName);
-    return genre ? genre.id : null;
-}
-
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
     const categories = data.genres;
