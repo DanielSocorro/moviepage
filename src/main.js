@@ -67,6 +67,16 @@ async function getActionMoviesPreview() {
     createMovies(actionMovies, actionMoviesPreviewList);
   }
 
+async function getAdventureMoviesPreview() {
+    const { data } = await api('discover/movie', {
+        params: {
+            with_genres: '#id12', 
+        }
+    });
+    const adventureMovies = data.results;
+    createMovies(adventureMovies, adventureMoviesPreviewList);
+  }
+
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
     const categories = data.genres;

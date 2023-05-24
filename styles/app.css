@@ -304,6 +304,63 @@ h2 {
     max-width: 150px;
   }
   
+  /* Adventure movie list */
+  .adventurePreview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .adventurePreview-title {
+    font-size: 18px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+  
+  .adventurePreview-btn {
+    border-radius: 8px;
+    height: 1.4rem;
+    margin-left: 80vw;
+ 
+  }
+  
+  .adventurePreview-movieList {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 241px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  .adventurePreview-movieList::-webkit-scrollbar {
+    width: 8px; 
+    background-color: transparent; 
+  }
+  
+  .adventurePreview-movieList::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+  }
+  
+  .adventurePreview-movieList::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; 
+  }
+  .adventurePreview-movieList .movie-container {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .adventurePreview-movieList .movie-container .movie-img {
+    height: 225px;
+    min-height: 225px;
+    max-height: 225px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  
   
   /* Categories */
   .category-container {

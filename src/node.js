@@ -2,6 +2,7 @@
 const headerSection = document.querySelector('#header');
 const trendingPreviewSection = document.querySelector('#trendingPreview');
 const actionPreviewSection = document.querySelector('#actionPreview');
+const adventurePreviewSection = document.querySelector('#adventurePreview');
 const categoriesPreviewSection = document.querySelector('#categoriesPreview');
 const genericSection = document.querySelector('#genericList');
 const movieDetailSection = document.querySelector('#movieDetail');
@@ -10,6 +11,7 @@ const movieDetailSection = document.querySelector('#movieDetail');
 const searchForm = document.querySelector('#searchForm');
 const trendingMoviesPreviewList = document.querySelector('.trendingPreview-movieList');
 const actionMoviesPreviewList = document.querySelector('.actionPreview-movieList');
+const adventureMoviesPreviewList = document.querySelector('.adventurePreview-movieList');
 const categoriesPreviewList = document.querySelector('.categoriesPreview-list');
 const movieDetailCategoriesList = document.querySelector('#movieDetail .categories-list');
 const relatedMoviesContainer = document.querySelector('.relatedMovies-scrollContainer');
@@ -24,6 +26,7 @@ const searchFormBtn = document.querySelector('#searchBtn');
 
 const trendingBtn = document.querySelector('.trendingPreview-btn');
 const actionBtn = document.querySelector('.actionPreview-btn');
+const adventureBtn = document.querySelector('.actionPreview-btn');
 
 const movieDetailTitle = document.querySelector('.movieDetail-title');
 const movieDetailReleaseDate = document.querySelector('.movieDetail-releasedate');
