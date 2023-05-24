@@ -1,6 +1,7 @@
 // Sections
 const headerSection = document.querySelector('#header');
 const trendingPreviewSection = document.querySelector('#trendingPreview');
+const actionPreviewSection = document.querySelector('#actionPreview');
 const categoriesPreviewSection = document.querySelector('#categoriesPreview');
 const genericSection = document.querySelector('#genericList');
 const movieDetailSection = document.querySelector('#movieDetail');
@@ -22,6 +23,7 @@ const searchFormInput = document.querySelector('#searchForm input');
 const searchFormBtn = document.querySelector('#searchBtn');
 
 const trendingBtn = document.querySelector('.trendingPreview-btn');
+const actionBtn = document.querySelector('.actionPreview-btn');
 
 const movieDetailTitle = document.querySelector('.movieDetail-title');
 const movieDetailReleaseDate = document.querySelector('.movieDetail-releasedate');

@@ -43,14 +43,14 @@ function homePage() {
     headerTitle.classList.remove('inactive');
     headerCategoryTitle.classList.add('inactive');
     searchForm.classList.remove('inactive');
-
+    actionPreviewSection.classList.remove('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.add('inactive');
 
 
-    getTrendingMoviesPreview();
+    getActionMoviesPreview();
     getCategoriesPreview();
 }
 
@@ -64,8 +64,8 @@ function categoriesPage() {
     headerTitle.classList.add('inactive');
     headerCategoryTitle.classList.remove('inactive');
     searchForm.classList.add('inactive');
-
     trendingPreviewSection.classList.add('inactive');
+    actionPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
@@ -87,8 +87,8 @@ function movieDetailsPage() {
     headerTitle.classList.add('inactive');
     headerCategoryTitle.classList.add('inactive');
     searchForm.classList.add('inactive');
-
     trendingPreviewSection.classList.add('inactive');
+    actionPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
@@ -109,6 +109,7 @@ function searchPage() {
     searchForm.classList.remove('inactive');
 
     trendingPreviewSection.classList.add('inactive');
+    actionPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
@@ -129,8 +130,8 @@ function trendsPage() {
     headerTitle.classList.add('inactive');
     headerCategoryTitle.classList.remove('inactive');
     searchForm.classList.add('inactive');
-
     trendingPreviewSection.classList.add('inactive');
+    actionPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
