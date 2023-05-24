@@ -68,15 +68,15 @@ h2 {
   }
   
   input {
-    background-color: var(--purple-light-2);
-    color: var(--purple-medium-2);
-    border: none;
+    background-color: transparent;
+    color: var(--purple-light-1);
+    border: white;
     font-size: 18px;
     padding-left: 16px;
   }
   
   input::placeholder {
-    color: var(--purple-medium-1);
+    color:white;
     font-family: var(--font-family-text);
   }
   
