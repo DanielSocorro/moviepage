@@ -180,19 +180,15 @@ h2 {
   }
   
   .header-searchForm input {
-    height: 48px;
-    width: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
   .header-searchForm button {
-    width: 56px;
-    height: 48px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
   }
   
-  
+
   /* Trending */
   .trendingPreview-header {
     display: flex;
