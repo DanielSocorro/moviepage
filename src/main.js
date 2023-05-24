@@ -60,7 +60,7 @@ async function getTrendingMoviesPreview(){
 async function getActionMovies() {
     const { data } = await api('discover/movie', {
         params: {
-            with_genres: '28', 
+            with_genres: 'id28', 
             sort_by: 'popularity.desc' 
         }
     });
