@@ -56,15 +56,13 @@ async function getTrendingMoviesPreview(){
     const movies = data.results;
     console.log(movies)
     createMovies(movies, trendingMoviesPreviewList);
+    adjustHorizontalScroll();
 
     
 }
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
-
     const categories = data.genres;
-
-
     createCategories(categories, categoriesPreviewList);
     
 }
@@ -73,20 +71,18 @@ async function getMoviesByCategory(id){
     const { data } = await api('discover/movie', {
         params: {
             with_genres: id,
-        }
+        },
     });
     const movies = data.results;
-
     createMovies(movies, genericSection);
 }
 async function getMoviesBySearch(query){
     const { data } = await api('search/movie', {
         params: {
             query,
-        }
+        },
     });
     const movies = data.results;
-
     createMovies(movies, genericSection);
 
 }
@@ -94,7 +90,6 @@ async function getMoviesBySearch(query){
 async function getTrendingMovies(){
     const { data } = await api('trending/movie/day');
     const movies = data.results;
-
     createMovies(movies, genericSection); 
 }
 
@@ -120,6 +115,28 @@ async function getMovieById(id){
 async function getRelatedMoviesId(id) {
     const { data } = await api(`movie/${id}/recommendations`);
     const relatedMovies = data.results;
-
     createMovies(relatedMovies, relatedMoviesContainer);
 }
+
+
+// Función para ajustar el desplazamiento horizontal
+function adjustHorizontalScroll() {
+    const movieList = document.getElementById('trendingMoviesPreviewList');
+    const isMobile = window.innerWidth <= 767;
+  
+    if (isMobile) {
+      movieList.style.overflowX = 'scroll';
+    } else {
+      movieList.style.overflowX = 'hidden';
+    }
+  }
+  
+  // Verificar el tamaño de la ventana al cargar y cambiar el comportamiento según sea necesario
+  window.addEventListener('load', function () {
+    adjustHorizontalScroll();
+  });
+  
+  // Verificar el tamaño de la ventana al cambiar su tamaño y cambiar el comportamiento según sea necesario
+  window.addEventListener('resize', function () {
+    adjustHorizontalScroll();
+  });

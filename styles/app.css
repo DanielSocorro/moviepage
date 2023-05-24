@@ -209,15 +209,10 @@ h2 {
   }
   
   .trendingPreview-movieList {
-    overflow-x: scroll;
-    overflow-y: hidden;
     white-space: nowrap;
     height: 241px;
     padding-left: 24px;
     padding-bottom: 16px;
-    /* Oculta la barra de desplazamiento */
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
   }
   
   .trendingPreview-movieList::-webkit-scrollbar {
