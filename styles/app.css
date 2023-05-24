@@ -68,8 +68,8 @@ h2 {
   }
   
   input {
-    background-color: var(--purple-light-2);
-    color: var(--purple-medium-2);
+    background-color: transparent;
+    color: white;
     border: none;
     font-size: 18px;
     padding-left: 16px;
