@@ -57,12 +57,15 @@ async function getTrendingMoviesPreview(){
     createMovies(movies, trendingMoviesPreviewList);
 }
 
-async function getActionsMoviesPreview(){
-    const { data } = await api('action/movie/day');
-    const movies = data.results;
-    createMovies(movies, actionMoviesPreviewList);
-    
-}
+async function getActionMovies() {
+    const { data } = await api('discover/movie', {
+      with_genres: '28', 
+      sort_by: 'popularity.desc' 
+    });
+    const actionMovies = data.results;
+    createMovies(actionMovies, actionMoviesList);
+  }
+
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
     const categories = data.genres;
