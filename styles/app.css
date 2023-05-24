@@ -254,6 +254,9 @@ h2 {
     align-items: center;
     justify-content: space-between;
   }
+  .actionPreview-title {
+    font-size: 18px;
+  }
   
   .actionPreview-btn {
     border-radius: 8px;
