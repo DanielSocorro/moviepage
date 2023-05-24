@@ -215,29 +215,10 @@ h2 {
     height: 241px;
     padding-left: 24px;
     padding-bottom: 16px;
-  }
-
-  /* Estilos adicionales para la versión de escritorio */
-@media (min-width: 768px) {
-  .trendingPreview-movieList {
-    overflow-x: auto;
     scrollbar-width: thin;
-    scrollbar-color: transparent transparent; /* Cambia esto según tus preferencias */
+    scrollbar-color: transparent transparent;
   }
   
-  .trendingPreview-movieList::-webkit-scrollbar {
-    width: 8px; /* Cambia esto según tus preferencias */
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
-  
-  .trendingPreview-movieList::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
-  
-  .trendingPreview-movieList::-webkit-scrollbar-thumb:hover {
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
-}
   .trendingPreview-movieList .movie-container {
     display: inline-block;
     margin-right: 8px;
