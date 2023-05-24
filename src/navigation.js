@@ -52,6 +52,7 @@ function homePage() {
 
 
     getTrendingMoviesPreview();
+    getActionMoviesPreview();
     getCategoriesPreview();
 }
 
@@ -118,6 +119,7 @@ function searchPage() {
    const [_, query] = location.hash.split('=');
    getMoviesBySearch(query);
 }
+
 function trendsPage() {
     
     console.log('TRENDS!!')

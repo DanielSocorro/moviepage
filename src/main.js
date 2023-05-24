@@ -54,11 +54,16 @@ function createCategories(categories, container) {
 async function getTrendingMoviesPreview(){
     const { data } = await api('trending/movie/day');
     const movies = data.results;
-    console.log(movies)
     createMovies(movies, trendingMoviesPreviewList);
-
-    
 }
+
+async function getActionMoviesPreview(){
+    const { data } = await api('action/movie/day');
+    const movies = data.results;
+    createMovies(movies, actionMoviesPreviewList);
+}
+
+
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
     const categories = data.genres;
