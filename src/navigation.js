@@ -35,7 +35,6 @@ function navigator() {
 }
 
 function homePage() {
-    console.log('home!!')
 
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = '';

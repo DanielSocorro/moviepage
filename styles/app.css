@@ -220,24 +220,53 @@ h2 {
   scrollbar-color: transparent transparent;
   }
   
-  .trendingPreview-movieList::-webkit-scrollbar {
-    width: 8px; /* Cambia esto según tus preferencias */
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
-  
-  .trendingPreview-movieList::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
-  
-  .trendingPreview-movieList::-webkit-scrollbar-thumb:hover {
-    background-color: transparent; /* Cambia esto según tus preferencias */
-  }
   .trendingPreview-movieList .movie-container {
     display: inline-block;
     margin-right: 8px;
   }
   
   .trendingPreview-movieList .movie-container .movie-img {
+    height: 225px;
+    min-height: 225px;
+    max-height: 225px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  
+  /* Action Movies*/
+  .actionPreview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .actionPreview-btn {
+    border-radius: 8px;
+    height: 1.4rem;
+    width: 3.5rem;
+    margin-left: 80vw;
+    margin-top: 8%;
+  }
+  
+  .actionPreview-movieList {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 241px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    /* Oculta la barra de desplazamiento */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  }
+  
+  .actionPreview-movieList .movie-container {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .actionPreview-movieList .movie-container .movie-img {
     height: 225px;
     min-height: 225px;
     max-height: 225px;
