@@ -70,7 +70,7 @@ async function getActionMoviesPreview() {
 async function getAdventureMoviesPreview() {
     const { data } = await api('discover/movie', {
         params: {
-            with_genres: '16', 
+            with_genres: '12', 
         }
     });
     const adventureMovies = data.results;
