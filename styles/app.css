@@ -154,9 +154,10 @@ h2 {
   
   .header-searchForm input {
     border-radius: 16px;
-    position: relative;
+    position: absolute;
     height: 32px;
     top: 8px;
+    left: 23rem;
   }
 
   .header-searchForm button {
