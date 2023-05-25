@@ -647,6 +647,12 @@ h2 {
     body {
       width: 85rem;
     }
+    .header-searchForm input {
+      left: 20rem;
+    }
+    .header-searchForm button {
+      left: 18rem;
+    }
     
   }
 
