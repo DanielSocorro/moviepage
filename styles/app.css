@@ -76,14 +76,14 @@ h2 {
   }
   
   input::placeholder {
-    color: white;
+    color: #ffffff40;
     font-family: var(--font-family-text);
   }
   
   button {
     background-color: transparent;
     border: none;
-    color: var(--purple-light-2);
+    color: #ffffff40;
     font-weight: var(--font-weight-text2);
     font-size: 14px;
     cursor: pointer;
@@ -188,7 +188,7 @@ h2 {
 
   .header-searchForm button {
     position: relative;
-    left:2px;
+    left: 2px;
     margin-right: 45px;
   }
   
