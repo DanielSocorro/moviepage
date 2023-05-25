@@ -52,6 +52,7 @@ function homePage() {
     getTrendingMoviesPreview();
     getActionMoviesPreview();
     getAdventureMoviesPreview();
+    getAnimationMoviesPreview();
     getCategoriesPreview();
 }
 
