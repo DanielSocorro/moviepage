@@ -1,5 +1,5 @@
 html {
-  background-color:var(--black-dark);
+  background-color:#ffffff40;
 }
 
 body {
@@ -27,12 +27,12 @@ h1, h2 {
 }
 h2 {
     font-size: 18px;
-    color: var(--purple-light-1);
+    color:#ffffff40;
     font-weight: var(--font-weight-title2);
   }
   
   h3 {
-    color: var(--purple-light-1);
+    color: #ffffff40;
     font-weight: var(--font-weight-text2);
     font-size: 16px;
   }
