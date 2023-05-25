@@ -495,7 +495,12 @@ h2 {
     height: 39px;
     align-items: center;
   }
-
+  @media only screen and (min-width: 820px ) {
+    .category-container {
+      width: 26%;
+    }
+    
+  }
   .category-title::before {
     content: '••••';
     color: transparent;
@@ -638,15 +643,9 @@ h2 {
   }
 
 
-@media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 801px) {
     body {
-        width: 85rem;
+        width: 90rem;
     }
 }
 
-@media only screen and (min-width: 820px ) {
-  .category-container {
-    width: 26%;
-  }
-  
-}
