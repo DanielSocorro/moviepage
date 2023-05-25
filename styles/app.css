@@ -1,33 +1,3 @@
-/* General */
-* { box-sizing: border-box; }
-
-:root {
-  --purple-light-1: #FBFAFB;
-  --purple-light-2: #EEEAF2;
-  --purple-medium-1: #AA83C8;
-  --purple-medium-2: #8B48BF;
-  --purple-medium-3: #5C218A;
-  --purple-dark-1: #3E0F64;
-  --purple-dark-2: #2A0646;
-
-
-  --yellow: #EECC75;
-  --green: #CAD297;
-  --green-dark:#6c8a21;
-  --aqua: #B7EAC5;
-  --lightBlue: #A2EEE5;
-  --darkBlue: #8EA2EA;
-  --red: #F09D9D;
-  --grey-blue: #618cbe;
-
-  --font-family-titles: 'Raleway', sans-serif;
-  --font-family-text: 'Red Hat Display', sans-serif;
-  --font-weight-title1: 800;
-  --font-weight-title2: 700;
-  --font-weight-text1: 400;
-  --font-weight-text2: 500;
-}
-
 html {
   background-color:var(--black-dark);
 }
