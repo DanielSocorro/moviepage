@@ -128,6 +128,9 @@ h2 {
     font-size: 37px;
   }
   
+  .header-title img {
+    width: 250px;
+  }
   .header-arrow {
     font-weight: var(--font-weight-text2);
     font-size: 36px;
@@ -152,8 +155,8 @@ h2 {
   .header-searchForm input {
     border-radius: 16px;
     position: relative;
-    left: 10%;
     height: 32px;
+    top: 8px;
   }
 
   .header-searchForm button {
