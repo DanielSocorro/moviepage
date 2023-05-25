@@ -69,9 +69,9 @@ h2 {
   
   input {
     background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 18px;
+    color: #ffffff40;
+    border: 1px  solid;
+    font-size: 16px;
     padding-left: 16px;
   }
   
@@ -180,12 +180,11 @@ h2 {
   }
   
   .header-searchForm input {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 16px;
   }
+
   .header-searchForm button {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    left:10%;
   }
   
 
