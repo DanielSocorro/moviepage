@@ -20,6 +20,7 @@
   --red: #F09D9D;
   --grey-blue: #618cbe;
 
+  
   --font-family-titles: 'Raleway', sans-serif;
   --font-family-text: 'Red Hat Display', sans-serif;
   --font-weight-title1: 800;
@@ -633,7 +634,7 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-  
+
   /* Navigation */
   .inactive {
     display: none;
