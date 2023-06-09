@@ -144,7 +144,7 @@ h2 {
   .header-container--long {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 100%, rgba(0, 0, 0, 0) 29.17%);
     background-size: cover !important;
-    height: 605px;
+    height: 100%;
     position: fixed;
     top: 0;
     width: 100%;
