@@ -93,6 +93,8 @@ function movieDetailsPage() {
     trendingPreviewSection.classList.add('inactive');
     actionPreviewSection.classList.add('inactive');
     adventurePreviewSection.classList.add('inactive');
+    animationPreviewSection.classList.add('inactive');
+    comedyPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
