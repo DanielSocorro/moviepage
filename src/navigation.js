@@ -47,6 +47,7 @@ function homePage() {
     adventurePreviewSection.classList.remove('inactive');
     animationPreviewSection.classList.remove('inactive');
     comedyPreviewSection.classList.remove('inactive');
+    crimePreviewSection.classList.remove('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
@@ -57,6 +58,7 @@ function homePage() {
     getAdventureMoviesPreview();
     getAnimationMoviesPreview();
     getComedyMoviesPreview();
+    getCrimeMoviesPreview();
     getCategoriesPreview();
 }
 
@@ -98,6 +100,7 @@ function movieDetailsPage() {
     adventurePreviewSection.classList.add('inactive');
     animationPreviewSection.classList.add('inactive');
     comedyPreviewSection.classList.add('inactive');
+    crimePreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');

@@ -90,11 +90,21 @@ async function getAnimationMoviesPreview() {
 async function getComedyMoviesPreview() {
     const { data } = await api('discover/movie', {
         params: {
-            with_genres: '80', 
+            with_genres: '35', 
         }
     });
     const comedyMovies = data.results;
     createMovies(comedyMovies, comedyMoviesPreviewList);
+  }
+
+async function getCrimeMoviesPreview() {
+    const { data } = await api('discover/movie', {
+        params: {
+            with_genres: '80', 
+        }
+    });
+    const crimeMovies = data.results;
+    createMovies(crimeMovies, crimeMoviesPreviewList);
   }
 
 async function getCategoriesPreview(){
