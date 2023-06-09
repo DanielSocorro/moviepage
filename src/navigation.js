@@ -92,6 +92,7 @@ function movieDetailsPage() {
     searchForm.classList.add('inactive');
     trendingPreviewSection.classList.add('inactive');
     actionPreviewSection.classList.add('inactive');
+    adventurePreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
