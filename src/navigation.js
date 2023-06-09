@@ -44,6 +44,9 @@ function homePage() {
     headerCategoryTitle.classList.add('inactive');
     searchForm.classList.remove('inactive');
     actionPreviewSection.classList.remove('inactive');
+    adventurePreviewSection.classList.remove('inactive');
+    animationPreviewSection.classList.remove('inactive');
+    comedyPreviewSection.classList.remove('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
