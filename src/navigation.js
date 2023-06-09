@@ -48,6 +48,7 @@ function homePage() {
     animationPreviewSection.classList.remove('inactive');
     comedyPreviewSection.classList.remove('inactive');
     crimePreviewSection.classList.remove('inactive');
+    dramaPreviewSection.classList.remove('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
@@ -59,6 +60,7 @@ function homePage() {
     getAnimationMoviesPreview();
     getComedyMoviesPreview();
     getCrimeMoviesPreview();
+    getDramaMoviesPreview();
     getCategoriesPreview();
 }
 
@@ -101,6 +103,7 @@ function movieDetailsPage() {
     animationPreviewSection.classList.add('inactive');
     comedyPreviewSection.classList.add('inactive');
     crimePreviewSection.classList.add('inactive');
+    dramaPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
