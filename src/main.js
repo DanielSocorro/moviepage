@@ -106,6 +106,16 @@ async function getCrimeMoviesPreview() {
     const crimeMovies = data.results;
     createMovies(crimeMovies, crimeMoviesPreviewList);
   }
+  
+async function getDramaMoviesPreview() {
+    const { data } = await api('discover/movie', {
+        params: {
+            with_genres: '80', 
+        }
+    });
+    const dramaMovies = data.results;
+    createMovies(dramaMovies, dramaMoviesPreviewList);
+  }
 
 async function getCategoriesPreview(){
     const { data } = await api('genre/movie/list');
