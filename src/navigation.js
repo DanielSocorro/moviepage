@@ -49,6 +49,7 @@ function homePage() {
     comedyPreviewSection.classList.remove('inactive');
     crimePreviewSection.classList.remove('inactive');
     dramaPreviewSection.classList.remove('inactive');
+    familyPreviewSection.classList.remove('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
@@ -61,6 +62,7 @@ function homePage() {
     getComedyMoviesPreview();
     getCrimeMoviesPreview();
     getDramaMoviesPreview();
+    getFamilyMoviesPreview();
     getCategoriesPreview();
 }
 
@@ -104,6 +106,7 @@ function movieDetailsPage() {
     comedyPreviewSection.classList.add('inactive');
     crimePreviewSection.classList.add('inactive');
     dramaPreviewSection.classList.add('inactive');
+    familyPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
