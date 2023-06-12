@@ -110,7 +110,7 @@ async function getCrimeMoviesPreview() {
 async function getDramaMoviesPreview() {
     const { data } = await api('discover/movie', {
         params: {
-            with_genres: '80', 
+            with_genres: '99', 
         }
     });
     const dramaMovies = data.results;
