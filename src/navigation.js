@@ -50,7 +50,7 @@ function homePage() {
     crimePreviewSection.classList.remove('inactive');
     dramaPreviewSection.classList.remove('inactive');
     familyPreviewSection.classList.remove('inactive');
-    /* historyPreviewSection.classList.remove('inactive'); */
+    historyPreviewSection.classList.add('inactive');
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
